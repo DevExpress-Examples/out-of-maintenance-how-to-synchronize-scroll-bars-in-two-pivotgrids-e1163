@@ -26,10 +26,10 @@ Namespace Q143451
 		''' </summary>
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
-			Me.nwindDataSet = New Q143451.nwindDataSet()
-			Me.bindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-			Me.salesPersonTableAdapter = New Q143451.nwindDataSetTableAdapters.SalesPersonTableAdapter()
-			Me.myPivotGridControl2 = New DXSample.MyPivotGridControl()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.bindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+            Me.salesPersonTableAdapter = New nwindDataSetTableAdapters.SalesPersonTableAdapter()
+            Me.myPivotGridControl2 = New DXSample.MyPivotGridControl()
 			Me.fieldOrderDate1 = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldUnitPrice1 = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldSalesPerson1 = New DevExpress.XtraPivotGrid.PivotGridField()
@@ -145,8 +145,8 @@ Namespace Q143451
 		Private myPivotGridControl2 As DXSample.MyPivotGridControl
 		Private nwindDataSet As nwindDataSet
 		Private bindingSource1 As System.Windows.Forms.BindingSource
-		Private salesPersonTableAdapter As Q143451.nwindDataSetTableAdapters.SalesPersonTableAdapter
-		Private fieldOrderDate As DevExpress.XtraPivotGrid.PivotGridField
+        Private salesPersonTableAdapter As nwindDataSetTableAdapters.SalesPersonTableAdapter
+        Private fieldOrderDate As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldUnitPrice As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldSalesPerson As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldOrderDate1 As DevExpress.XtraPivotGrid.PivotGridField
