@@ -10,6 +10,8 @@ namespace Q143451 {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+            myPivotGridControl1.BestFit();
+            myPivotGridControl2.BestFit();
         }
 
         private void Form1_Load(object sender, EventArgs e) {

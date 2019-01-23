@@ -65,7 +65,7 @@ namespace Q143451 {
             this.fieldSalesPerson1});
             this.myPivotGridControl2.Location = new System.Drawing.Point(12, 238);
             this.myPivotGridControl2.Name = "myPivotGridControl2";
-            this.myPivotGridControl2.Size = new System.Drawing.Size(400, 200);
+            this.myPivotGridControl2.Size = new System.Drawing.Size(459, 200);
             this.myPivotGridControl2.SynchronizedPivot = this.myPivotGridControl1;
             this.myPivotGridControl2.TabIndex = 1;
             // 
@@ -100,7 +100,7 @@ namespace Q143451 {
             this.fieldSalesPerson});
             this.myPivotGridControl1.Location = new System.Drawing.Point(12, 12);
             this.myPivotGridControl1.Name = "myPivotGridControl1";
-            this.myPivotGridControl1.Size = new System.Drawing.Size(400, 200);
+            this.myPivotGridControl1.Size = new System.Drawing.Size(459, 200);
             this.myPivotGridControl1.SynchronizedPivot = this.myPivotGridControl2;
             this.myPivotGridControl1.TabIndex = 0;
             // 
@@ -129,9 +129,10 @@ namespace Q143451 {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 466);
+            this.ClientSize = new System.Drawing.Size(483, 466);
             this.Controls.Add(this.myPivotGridControl2);
             this.Controls.Add(this.myPivotGridControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

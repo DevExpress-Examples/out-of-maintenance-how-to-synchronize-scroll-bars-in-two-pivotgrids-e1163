@@ -1,12 +1,8 @@
 using DevExpress.XtraPivotGrid;
-using DevExpress.XtraPivotGrid.Data;
-using DevExpress.XtraEditors;
-using System.Windows.Forms;
 using System.Drawing;
-using System.Diagnostics;
-using System;
 
-namespace DXSample {
+namespace DXSample
+{
     public class MyPivotGridControl : PivotGridControl {
         public MyPivotGridControl() : base() { }
         private MyPivotGridControl synchronizedPivot;

@@ -1,18 +1,14 @@
-Imports Microsoft.VisualBasic
-Imports DevExpress.XtraPivotGrid
-Imports DevExpress.XtraPivotGrid.Data
-Imports DevExpress.XtraEditors
-Imports System.Windows.Forms
+﻿Imports DevExpress.XtraPivotGrid
 Imports System.Drawing
-Imports System.Diagnostics
-Imports System
 
 Namespace DXSample
 	Public Class MyPivotGridControl
 		Inherits PivotGridControl
+
 		Public Sub New()
 			MyBase.New()
 		End Sub
+'INSTANT VB NOTE: The variable synchronizedPivot was renamed since Visual Basic does not allow variables and other class members to have the same name:
 		Private synchronizedPivot_Renamed As MyPivotGridControl
 		Public Property SynchronizedPivot() As MyPivotGridControl
 			Get

@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace Q143451
+﻿Namespace Q143451
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -37,10 +35,10 @@ Namespace Q143451
 			Me.fieldOrderDate = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldUnitPrice = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldSalesPerson = New DevExpress.XtraPivotGrid.PivotGridField()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.bindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.myPivotGridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.myPivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.bindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.myPivotGridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.myPivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' nwindDataSet
@@ -64,7 +62,7 @@ Namespace Q143451
 			Me.myPivotGridControl2.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() { Me.fieldOrderDate1, Me.fieldUnitPrice1, Me.fieldSalesPerson1})
 			Me.myPivotGridControl2.Location = New System.Drawing.Point(12, 238)
 			Me.myPivotGridControl2.Name = "myPivotGridControl2"
-			Me.myPivotGridControl2.Size = New System.Drawing.Size(400, 200)
+			Me.myPivotGridControl2.Size = New System.Drawing.Size(459, 200)
 			Me.myPivotGridControl2.SynchronizedPivot = Me.myPivotGridControl1
 			Me.myPivotGridControl2.TabIndex = 1
 			' 
@@ -96,7 +94,7 @@ Namespace Q143451
 			Me.myPivotGridControl1.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() { Me.fieldOrderDate, Me.fieldUnitPrice, Me.fieldSalesPerson})
 			Me.myPivotGridControl1.Location = New System.Drawing.Point(12, 12)
 			Me.myPivotGridControl1.Name = "myPivotGridControl1"
-			Me.myPivotGridControl1.Size = New System.Drawing.Size(400, 200)
+			Me.myPivotGridControl1.Size = New System.Drawing.Size(459, 200)
 			Me.myPivotGridControl1.SynchronizedPivot = Me.myPivotGridControl2
 			Me.myPivotGridControl1.TabIndex = 0
 			' 
@@ -125,16 +123,18 @@ Namespace Q143451
 			' 
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(432, 466)
+			Me.ClientSize = New System.Drawing.Size(483, 466)
 			Me.Controls.Add(Me.myPivotGridControl2)
 			Me.Controls.Add(Me.myPivotGridControl1)
+			Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.bindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.myPivotGridControl2, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.myPivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
+			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.bindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.myPivotGridControl2, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.myPivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
