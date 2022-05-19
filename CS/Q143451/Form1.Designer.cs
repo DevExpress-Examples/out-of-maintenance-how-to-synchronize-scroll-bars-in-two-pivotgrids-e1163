@@ -24,17 +24,23 @@ namespace Q143451 {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding4 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding5 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding6 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.nwindDataSet = new Q143451.nwindDataSet();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.salesPersonTableAdapter = new Q143451.nwindDataSetTableAdapters.SalesPersonTableAdapter();
             this.myPivotGridControl2 = new DXSample.MyPivotGridControl();
-            this.fieldOrderDate1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldUnitPrice1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldSalesPerson1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.myPivotGridControl1 = new DXSample.MyPivotGridControl();
             this.fieldOrderDate = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldUnitPrice = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldSalesPerson = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.myPivotGridControl1 = new DXSample.MyPivotGridControl();
+            this.fieldOrderDate2 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldUnitPrice2 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldSalesPerson2 = new DevExpress.XtraPivotGrid.PivotGridField();
             ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPivotGridControl2)).BeginInit();
@@ -60,70 +66,78 @@ namespace Q143451 {
             this.myPivotGridControl2.Cursor = System.Windows.Forms.Cursors.Default;
             this.myPivotGridControl2.DataSource = this.bindingSource1;
             this.myPivotGridControl2.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldOrderDate1,
-            this.fieldUnitPrice1,
-            this.fieldSalesPerson1});
-            this.myPivotGridControl2.Location = new System.Drawing.Point(12, 238);
-            this.myPivotGridControl2.Name = "myPivotGridControl2";
-            this.myPivotGridControl2.Size = new System.Drawing.Size(400, 200);
-            this.myPivotGridControl2.SynchronizedPivot = this.myPivotGridControl1;
-            this.myPivotGridControl2.TabIndex = 1;
-            // 
-            // fieldOrderDate1
-            // 
-            this.fieldOrderDate1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldOrderDate1.AreaIndex = 0;
-            this.fieldOrderDate1.FieldName = "OrderDate";
-            this.fieldOrderDate1.Name = "fieldOrderDate1";
-            // 
-            // fieldUnitPrice1
-            // 
-            this.fieldUnitPrice1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldUnitPrice1.AreaIndex = 0;
-            this.fieldUnitPrice1.FieldName = "UnitPrice";
-            this.fieldUnitPrice1.Name = "fieldUnitPrice1";
-            // 
-            // fieldSalesPerson1
-            // 
-            this.fieldSalesPerson1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldSalesPerson1.AreaIndex = 0;
-            this.fieldSalesPerson1.FieldName = "Sales Person";
-            this.fieldSalesPerson1.Name = "fieldSalesPerson1";
-            // 
-            // myPivotGridControl1
-            // 
-            this.myPivotGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.myPivotGridControl1.DataSource = this.bindingSource1;
-            this.myPivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
             this.fieldOrderDate,
             this.fieldUnitPrice,
             this.fieldSalesPerson});
-            this.myPivotGridControl1.Location = new System.Drawing.Point(12, 12);
-            this.myPivotGridControl1.Name = "myPivotGridControl1";
-            this.myPivotGridControl1.Size = new System.Drawing.Size(400, 200);
-            this.myPivotGridControl1.SynchronizedPivot = this.myPivotGridControl2;
-            this.myPivotGridControl1.TabIndex = 0;
+            this.myPivotGridControl2.Location = new System.Drawing.Point(12, 238);
+            this.myPivotGridControl2.Name = "myPivotGridControl2";
+            this.myPivotGridControl2.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
+            this.myPivotGridControl2.Size = new System.Drawing.Size(400, 200);
+            this.myPivotGridControl2.SynchronizedPivot = this.myPivotGridControl1;
+            this.myPivotGridControl2.TabIndex = 1;
             // 
             // fieldOrderDate
             // 
             this.fieldOrderDate.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
             this.fieldOrderDate.AreaIndex = 0;
-            this.fieldOrderDate.FieldName = "OrderDate";
+            dataSourceColumnBinding1.ColumnName = "OrderDate";
+            this.fieldOrderDate.DataBinding = dataSourceColumnBinding1;
             this.fieldOrderDate.Name = "fieldOrderDate";
             // 
             // fieldUnitPrice
             // 
             this.fieldUnitPrice.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldUnitPrice.AreaIndex = 0;
-            this.fieldUnitPrice.FieldName = "UnitPrice";
+            dataSourceColumnBinding2.ColumnName = "UnitPrice";
+            this.fieldUnitPrice.DataBinding = dataSourceColumnBinding2;
             this.fieldUnitPrice.Name = "fieldUnitPrice";
             // 
             // fieldSalesPerson
             // 
             this.fieldSalesPerson.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldSalesPerson.AreaIndex = 0;
-            this.fieldSalesPerson.FieldName = "Sales Person";
+            dataSourceColumnBinding3.ColumnName = "Sales Person";
+            this.fieldSalesPerson.DataBinding = dataSourceColumnBinding3;
             this.fieldSalesPerson.Name = "fieldSalesPerson";
+            // 
+            // myPivotGridControl1
+            // 
+            this.myPivotGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.myPivotGridControl1.DataSource = this.bindingSource1;
+            this.myPivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
+            this.fieldOrderDate2,
+            this.fieldUnitPrice2,
+            this.fieldSalesPerson2});
+            this.myPivotGridControl1.Location = new System.Drawing.Point(12, 12);
+            this.myPivotGridControl1.Name = "myPivotGridControl1";
+            this.myPivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
+            this.myPivotGridControl1.Size = new System.Drawing.Size(400, 200);
+            this.myPivotGridControl1.SynchronizedPivot = this.myPivotGridControl2;
+            this.myPivotGridControl1.TabIndex = 0;
+            // 
+            // fieldOrderDate2
+            // 
+            this.fieldOrderDate2.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldOrderDate2.AreaIndex = 0;
+            dataSourceColumnBinding4.ColumnName = "OrderDate";
+            this.fieldOrderDate2.DataBinding = dataSourceColumnBinding4;
+            this.fieldOrderDate2.Name = "fieldOrderDate2";
+            // 
+            // fieldUnitPrice2
+            // 
+            this.fieldUnitPrice2.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldUnitPrice2.AreaIndex = 0;
+            dataSourceColumnBinding5.ColumnName = "UnitPrice";
+            this.fieldUnitPrice2.DataBinding = dataSourceColumnBinding5;
+            this.fieldUnitPrice2.Name = "fieldUnitPrice2";
+            // 
+            // fieldSalesPerson2
+            // 
+            this.fieldSalesPerson2.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldSalesPerson2.AreaIndex = 0;
+            dataSourceColumnBinding6.ColumnName = "Sales Person";
+            this.fieldSalesPerson2.DataBinding = dataSourceColumnBinding6;
+            this.fieldSalesPerson2.Name = "fieldSalesPerson2";
             // 
             // Form1
             // 
@@ -150,12 +164,12 @@ namespace Q143451 {
         private nwindDataSet nwindDataSet;
         private System.Windows.Forms.BindingSource bindingSource1;
         private Q143451.nwindDataSetTableAdapters.SalesPersonTableAdapter salesPersonTableAdapter;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldOrderDate2;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldUnitPrice2;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldSalesPerson2;
         private DevExpress.XtraPivotGrid.PivotGridField fieldOrderDate;
         private DevExpress.XtraPivotGrid.PivotGridField fieldUnitPrice;
         private DevExpress.XtraPivotGrid.PivotGridField fieldSalesPerson;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldOrderDate1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldUnitPrice1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldSalesPerson1;
     }
 }
 
